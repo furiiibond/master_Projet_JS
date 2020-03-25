@@ -1,0 +1,129 @@
+
+html 
+{
+    height: 100%;
+    width: 100%;
+}
+
+body 
+{
+    height: 80%;
+}
+.h1{
+    text-align: center;
+}
+.center {
+    margin: auto;
+    width: 480px;
+    height: 480px;
+    border: 3px solid #73AD21;
+    background-color: rgba(125, 10, 170, 0.623);
+    padding: 10px 0px;
+  }
+.center_texte {
+    margin: auto;
+    width: 480px;
+    border: 3px solid #73AD21;
+    padding: 20px;
+    vertical-align: center;
+  }
+#contenu{
+    float:left;
+    height: 100%;
+    width:100%;
+}
+#solution {
+    margin-top: 30px;
+    height: 100%;
+    width: auto;
+
+}
+#descriptif{
+    width:500px;
+    text-align:justify;
+}
+
+.commandes{
+    width: 420px;
+    height: 30px;
+    margin-left: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+#canv{
+    width: 440px;
+    height: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    /*float: left;*/
+} 
+    
+#bt1{
+    width: 50px;
+    height:25px;
+	background-color:palegreen;
+	border-radius:5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10pt;
+}
+    
+#bt2{
+    width: 50px;
+	height:25px;
+	background-color:palegreen;
+	border-radius:5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10pt;
+}
+    
+#bt3{
+    width: 50px;
+	height:25px;
+	background-color:palegreen;
+	border-radius:5px;
+    margin-left: 100px;
+    margin-right: 5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+#btRecule{
+    width: 50px;
+    height:25px;
+    background-color:palegreen;
+    border-radius:5px;
+    margin-left: 170px;
+    margin-right: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+
+#btHelp{
+    width: 50px;
+    height:25px;
+    background-color:palegreen;
+    border-radius:5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10pt;
+}
+#config-select {
+    width: 80px;
+    height:25px;
+    background-color:palegreen;
+    border-radius:5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+
+

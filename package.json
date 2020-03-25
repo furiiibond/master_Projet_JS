@@ -1,0 +1,17 @@
+{
+  "name": "version3",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "debug": "^2.6.9",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.5",
+    "jade": "^1.11.0",
+    "mathjs": "^5.2.3",
+    "serve-favicon": "^2.4.5"
+  }
+}
