@@ -23,6 +23,10 @@
 
     function depart(bt1) {						
     }
+
+    function deplace(bt1) {						
+    }
+
         
 //   ******************************************
 
@@ -42,14 +46,25 @@
     } 
 
     function affiche(){
-    }	
+	    // exemple d'affichage d'un texte dans la zone canvas
+	        hh.fillStyle="red";
+            hh.fillText("BIENVENU DANS VOTRE APPLICATION",210,100);
+        // exemple d'un tracé d'un objet rectangulaire dans cette surface
+            hh.fillStyle="yellow";       
+	        hh.fillRect(160,140,100,44);
+            hh.fillStyle="lime";       
+	        hh.fillRect(160,190,100,44);
+            hh.fillStyle="blue";       
+	        hh.fillRect(160,240,100,44);
+
+        }	
 
 
     function trace(){
         hh.font="bold 16px Arial";
         hh.textAlign="center";
         hh.fillStyle="silver";       
-	hh.fillRect(0,0,440,440);
+	    hh.fillRect(0,0,440,440);
         hh.fillStyle="black";
         hh.fillRect(Xd+20,Yd+20,370,370);
         hh.fillStyle="silver";
@@ -60,5 +75,6 @@
 	hh.fillText("out",400,190);
         hh.lineWidth=1; 
         cadre3D(20,20,420,420);
+	affiche();
     } 
 

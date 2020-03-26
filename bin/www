@@ -69,7 +69,7 @@ function onListening() {
 // ----------------------------------------------
 // Création HTTP Serveur avec app / socketIO
 // ----------------------------------------------
-console.log("Creation du serveur ... ");
+console.log("Creation du serveur ... http://localhost:4800");
 // Get port from environment and store in Express.
 var port = normalizePort(process.env.PORT || '4800');
 app.set('port', port);
