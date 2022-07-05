@@ -116,7 +116,7 @@ body
     font-size: 10pt;
 }
 #config-select {
-    width: 80px;
+    width: 150px;
     height:25px;
     background-color:palegreen;
     border-radius:5px;
@@ -124,6 +124,4 @@ body
     font-weight: bold;
     font-size: 10pt;
 }
-
-
 

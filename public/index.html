@@ -2,31 +2,34 @@
 <html>
 <head>
 <title>Projet YS2020</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
 <script src="./scripts/jquery-3.4.1.min.js"></script>
 </head>
 <body>	
 <center>
-<h1>Squelette du jeu 2020</h1>
+<h1>Puissance 4</h1>
 </center>
 <div id="conteneur" class="center">
-	<div id="contenu">
-		<div id="content" >	
+    <div id="contenu">
+        <div id="content" >
             <div id="commande_top" class="commandes">
-                <input type="button" id="bt3" value="RàZ" onClick="choixRaz();"/>
+                <input type="button" id="bt3" value="RaZ" onClick="choixRaz();"/>
                 <input type="button" id="bt2" value="Sauver" onClick="choixSave();"/>
-                <input type="button" id="bt1" value="Auto" onClick="depart(this)"/>
-                <select name="config" id="config-select" onchange="chargement_();">
+                <input type="button" id="bt1" value="Resor" onClick="restore()"/>
+                <select name="config" id="config-select" onchange="initColor(value);">
+                    <option value="">Choisir une couleur de depart </option>
+                    <option value="R">Rouge</option>
+                    <option value="Y">Jaune</option>
                 </select>
             </div>
             <div id="canv">                                     
                 <canvas id="canvas" width="440px" height="440px"></canvas>
             </div>
             <div id="commande_bottom" class="commandes">
-                <input type="button" id="btRecule" value="<<" onClick="deplace('recule');"/>
-                <input type="button" id="btHelp" value="?" onClick="choixRaz();"/>
+                <input type="button" id="btRecule" value="<<" onClick=""/>
+                <input type="button" id="btHelp" value="?" onClick="indications();"/>
             </div>
         </div>
     </div>		
@@ -35,8 +38,28 @@
 <script src='./scripts/comportement.js'></script> 
 <div id='descriptif' class="center_texte">
     <p>
-        Conditions
+        Binvenue dans le jeux de puissance 4, vous devez jouer contre votre adversaire.
+        Vous allez jouer chaquns votre tour en plaçant des pions dans les cases vides.
+        Le but du jeu est de placer des pions dans la colonne de gauche à droite.
+        Le premier joueur à aligner 4 pions dans une ligne, colonne ou diagonale gagne.
+        Le jeu se termine aussi lorsqu'un joueur a rempli la grille.
+
     </p>
+    <p>
+        Le jeu est réalisé en Javascript et utilise les canvas.
+        Les pions sont représentés par des cercles.
+    </p>
+    <p>
+        Pour jouer appuiez sur la touche de votre clavier correspondant à la colonne.
+    </p>
+    Differentes action supplémentaires sont possibles:
+    <ul>
+        <li>- presser le bouton "RAZ" pour remettre à zéro la grille.</li>
+        <li>- presser le bouton "Sauver" pour sauvegarder la grille.</li>
+        <li>- presser le bouton "Resor" pour restaurer la grille.</li>
+        <li>- choisir une couleur de depart.</li>
+        <li>- presser le bouton "?" pour afficher les indications.</li>
+    </ul>
  </div>
 
 <div id="piedpage">
